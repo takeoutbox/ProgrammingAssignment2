@@ -31,5 +31,5 @@ cacheSolve <- function(x, ...) {
   data <- x$get() #returns the uninverted variable
   inver <- solve(data, ...) #solves for the inverted variable
   x$setinverse(inver) #caches the inverted variable
-  inver #displays the inverted variable
+  inver #returns the inverted variable
 }
